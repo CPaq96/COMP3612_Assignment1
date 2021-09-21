@@ -1,5 +1,38 @@
+.button {
+  display: inline-block;
+  padding: 6px 18px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-align: center;
+  color: #51279b;
+}
+
+/*https://www.w3schools.com/howto/howto_css_center_website.asp*/
 body {
+  max-width: 980px;
+  margin: auto;
+}
+
+/*Header styling*/
+header {
+  background-size: cover;
   background-image: url(../florence.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 500px;
+}
+
+nav {
+  background-image: url(../logo.svg);
+  background-size: 60px;
+  background-repeat: no-repeat;
+  padding-left: 70px;
+  padding-top: 8px;
+}
+
+#welcome {
+  padding-left: 13px; /* Aligned with nav*/
+  padding-top: 100px;
 }
 
 h1 {
@@ -11,8 +44,24 @@ h2 {
 }
 
 h1,
-h2 {
+h2,
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
   color: #ffffff;
+}
+
+li {
+  float: left;
+}
+
+/*Main styling*/
+main {
+  background-color: lavender;
+}
+main li {
+  padding-top: 6px;
+  padding-left: 3px;
+  padding-right: 3px;
 }
 
 ul {
@@ -23,15 +72,11 @@ ul {
   background-color: none;
 }
 
-li {
-  float: left;
-}
-
 li img {
   size: 60px;
 }
 
-li a {
+header li a {
   display: block;
   color: #51279b;
   text-align: center;
