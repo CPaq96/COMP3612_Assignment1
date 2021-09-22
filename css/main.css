@@ -11,6 +11,7 @@
 body {
   max-width: 980px;
   margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /*Header styling*/
@@ -31,22 +32,20 @@ nav {
 }
 
 #welcome {
-  padding-left: 13px; /* Aligned with nav*/
-  padding-top: 100px;
+  padding-left: 85px; /* Aligned with nav*/
+  padding-top: 85px;
 }
 
 h1 {
   font-size: 48px;
 }
 
-h2 {
+div#welcome p {
   font-size: 24px;
 }
 
 h1,
-h2,
-h3 {
-  font-family: Arial, Helvetica, sans-serif;
+div#welcome p {
   color: #ffffff;
 }
 
@@ -58,8 +57,8 @@ li {
 main {
   background-color: lavender;
 }
-main li {
-  padding-top: 6px;
+div#cards ul li {
+  padding-top: 15px;
   padding-left: 3px;
   padding-right: 3px;
 }
@@ -72,18 +71,14 @@ ul {
   background-color: none;
 }
 
-li img {
-  size: 60px;
-}
-
-header li a {
-  display: block;
+header nav a {
+  display: inline-block;
   color: #51279b;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
-li a:hover {
+nav a:hover {
   color: #8662c7;
 }
