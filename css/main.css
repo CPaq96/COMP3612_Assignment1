@@ -1,15 +1,9 @@
-.button {
-  display: inline-block;
-  padding: 6px 18px;
-  vertical-align: middle;
-  overflow: hidden;
-  text-align: center;
-  color: #51279b;
+/*variables:*/
+:root {
 }
-
 /*https://www.w3schools.com/howto/howto_css_center_website.asp*/
 body {
-  max-width: 980px;
+  max-width: 989px; /*Fits all 3 cards*/
   margin: auto;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -49,26 +43,41 @@ div#welcome p {
   color: #ffffff;
 }
 
-li {
-  float: left;
+/*https://www.w3schools.com/css/css3_buttons.asp*/
+a[class$="button"] {
+  background-color: #51279b;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+.button:hover {
+  background-color: #8662c7;
 }
 
 /*Main styling*/
 main {
   background-color: lavender;
 }
-div#cards ul li {
-  padding-top: 15px;
-  padding-left: 3px;
-  padding-right: 3px;
+
+div#cards {
+  padding: 10px;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: none;
+.card img {
+  border-radius: 5px;
+}
+
+.card {
+  padding: 0px;
+  border-radius: 5px;
+  background-color: white;
+  display: inline-block;
 }
 
 header nav a {
@@ -81,4 +90,58 @@ header nav a {
 
 nav a:hover {
   color: #8662c7;
+}
+
+div p[class$="title"] {
+  margin: 5px;
+  font-size: 14px;
+}
+
+.card p {
+  margin: 5px;
+  font-size: 12px;
+}
+
+.heart {
+  background-image: url(../heart.png);
+  background-size: 20px;
+  background-repeat: no-repeat;
+  padding-right: 10px;
+}
+
+.bubble {
+  background-size: 20px;
+  background-size: url(../comment.png);
+  background-repeat: no-repeat;
+  padding-right: 10px;
+}
+
+.icons div {
+  display: inline-block;
+}
+
+div[class^="number"] p {
+  font-size: 10px;
+}
+
+div[class$="likes"] {
+  background-image: url(../heart.png);
+  background-size: 20px;
+  width: 40px;
+  padding: 0px;
+  margin: 5px;
+  background-repeat: no-repeat;
+  background-position: left;
+  text-align: right;
+}
+
+div[class$="comments"] {
+  background-image: url(../comment.png);
+  background-size: 20px;
+  width: 40px;
+  padding: 0px;
+  margin: 5px;
+  background-repeat: no-repeat;
+  background-position: left;
+  text-align: right;
 }
