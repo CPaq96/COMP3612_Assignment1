@@ -1,0 +1,54 @@
+/*https://www.w3schools.com/howto/howto_css_center_website.asp*/
+body {
+  max-width: 989px; /*Fits all 3 cards*/
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-size: cover;
+  background-image: url(../1-large.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 500px;
+}
+
+footer {
+  display: inline-block;
+  background-color: white;
+  color: #51279b;
+  width: 100%;
+  margin: 0px;
+}
+
+footer a,
+footer p {
+  color: #51279b;
+  margin: 0;
+  padding: 0px 5px 20px 5px;
+  text-decoration: none;
+}
+
+nav {
+  background-image: url(../logo.svg);
+  background-size: 60px;
+  background-repeat: no-repeat;
+  padding: 8px 70px;
+}
+
+header nav a {
+  display: inline-block;
+  color: #51279b;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav a:hover,
+footer a:hover {
+  color: #8662c7;
+}
+
+main {
+  background-color: lavender;
+}

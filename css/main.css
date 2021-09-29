@@ -88,7 +88,8 @@ div#cards {
   border-radius: 5px;
 }
 
-.card {
+.card,
+#cards a {
   padding: 0px;
   border-radius: 5px;
   background-color: white;
@@ -111,6 +112,15 @@ footer a:hover {
 div p[class$="title"] {
   margin: 5px;
   font-size: 14px;
+}
+
+#cards a {
+  text-decoration: none;
+}
+
+/*https://www.w3schools.com/css/css3_shadows_box.asp*/
+.card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .card p {
