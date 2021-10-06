@@ -50,7 +50,8 @@ nav a {
 }
 
 nav a:hover {
-  background-color: var(--lightPurple);
+  background-color: white;
+  color: var(--darkPurple);
 }
 
 main {
