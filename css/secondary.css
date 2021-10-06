@@ -52,3 +52,74 @@ footer a:hover {
 main {
   background-color: lavender;
 }
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#info {
+  color: #51279b;
+  background-color: white;
+  border-radius: 5px;
+  margin: 1rem 0.5rem 1rem 1rem;
+  padding: 1rem;
+}
+
+h1 {
+  text-transform: uppercase;
+  margin: 0.5rem 0.5rem 0 0.5rem;
+  padding: 0;
+}
+
+h2 {
+  margin: 0rem 0.5rem 0.5rem 0.5rem;
+  padding: 0;
+  font-weight: lighter;
+  font-size: smaller;
+}
+
+main div p {
+  margin: 0.5rem;
+}
+
+#map {
+  margin: 1rem 1rem 1rem 0.5rem;
+}
+
+#map img {
+  border-radius: 5px;
+}
+
+.icons {
+  padding: 0;
+  margin: 0.5rem;
+}
+
+.icons div {
+  display: inline-block;
+  font-size: 10px;
+}
+
+div[class$="likes"] {
+  background-image: url(../heart.png);
+  background-size: 20px;
+  width: 40px;
+  padding: 0px;
+  margin: 5px;
+  background-repeat: no-repeat;
+  background-position: left;
+  text-align: right;
+}
+
+div[class$="comments"] {
+  background-image: url(../comment.png);
+  background-size: 20px;
+  width: 40px;
+  padding: 0px;
+  margin: 5px;
+  background-repeat: no-repeat;
+  background-position: left;
+  text-align: right;
+}
