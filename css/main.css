@@ -61,7 +61,7 @@ main {
 }
 
 #welcome {
-  background-image: url(../florence.jpg);
+  background-image: url(./images/florence.jpg);
   background-repeat: no-repeat;
   background-position: center;
   text-align: left;
@@ -139,7 +139,7 @@ div[class^="number"] p {
 }
 
 div[class$="likes"] {
-  background-image: url(../heart.png);
+  background-image: url(./images/heart.png);
   background-size: var(--iconSize);
   padding: 0 0 0 20px;
   background-repeat: no-repeat;
@@ -147,7 +147,7 @@ div[class$="likes"] {
 }
 
 div[class$="comments"] {
-  background-image: url(../comment.png);
+  background-image: url(./images/comment.png);
   background-size: var(--iconSize);
   padding: 0 0 0 20px;
   background-repeat: no-repeat;
@@ -162,6 +162,9 @@ div[class$="comments"] {
 footer {
   background-color: var(--darkPurple);
   width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 footer a,
@@ -170,6 +173,10 @@ footer p {
   padding: 10px 5px;
   text-decoration: none;
   color: white;
+}
+
+footer #footer-menu {
+  text-align: right;
 }
 
 footer p a:hover {
